@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@ctrl/ngx-emoji-mart/picker';
+@import './assets/styles/variables';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: $gray; }
+
+.emoji-mart {
+    background-color: $white;
+    width: 100% !important;
+    border: none;
+}
+
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary{
+    background-color: #224272;
+    min-width: 83px;
+    border-radius: 20px;
+}
+
+.mat-icon {
+    color: $theme;
+}
+
+.comment-scroll_wrapper {
+    max-height: 200px;
+    overflow: auto;
+}

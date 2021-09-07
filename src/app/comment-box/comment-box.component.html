@@ -1,0 +1,23 @@
+<div class="comment-box">
+    <div class="comment-box_main">
+        <span class="commment-date">
+            <mat-icon>date_range</mat-icon>
+            {{dateTime}}
+        </span>
+        <p>
+            {{text}}
+        </p>
+    </div>
+
+    <div class="comment-handle_box">
+        <button mat-button [disableRipple]="true"  [matMenuTriggerFor]="menu"><mat-icon>more_verts</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button 
+                mat-menu-item
+                (click)="removeComment()"
+            >
+            Remove
+        </button>
+        </mat-menu>
+    </div>
+</div>
